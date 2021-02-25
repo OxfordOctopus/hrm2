@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@500&family=Rajdhani&family=Bitter&family=Lobster&display=swap');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.6;
+	background: #f6f6f6;
+	color: #222;
+}
+
+p {
+	font-family: 'Rajdhani', sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	padding: 0px 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	-webkit-box-shadow: 0 2px 2px rgba(225,225,225,0.7);
+	box-shadow: 0 2px 2px rgba(225,225,225,0.7);
+}
+
+.logo img {
+	width: 180px;
+}
+
+.navigation-menu a{
+	margin-right: 20px;
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	transition: all 400ms ease;
+	font-weight: 600;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.navigation-menu a:hover{
+	color: #0058b7;
+}
+
+.navigation-menu a.active {
+	color: #0077F8;
+	font-weight: bold;
+}
+
+
+/*################ SHOWCASE ###################*/
+.showcase {
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/showcase.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 670px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+
+.showcase .wrapper{
+	width: 60%;
+	margin: auto;
+}
+
+.showcase h3{
+	font-size: 47px;
+	text-transform: uppercase;
+	font-family: 'Bitter', serif;
+}
+
+.showcase p{
+	font-size: 19px;
+	margin-top: 15px;
+	font-family: 'Rajdhani', sans-serif;
+	margin-bottom: 40px;
+	font-weight: 300;
+}
+
+.button {
+	font-size: 18px;
+	text-transform: uppercase;
+	background: #0077F8;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 60px;
+	font-family: 'Rajdhani', serif;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.button:hover {
+	background: #0058b7;
+}
+
+.button:focus {
+	outline: none;
+}
+
+/*############### BOXES ##################*/
+
+.boxes{
+	background: #fff;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	width: 85%;
+	margin: -60px auto 130px;
+	z-index: 10;
+	box-shadow: 0 5px 15px rgba(182, 182, 182, 0.65);
+}
+
+.box{
+	border-right: 1px solid #f1f1f1;
+	padding: 60px;
+}
+
+.box:hover{
+	border-bottom: 2px solid #0058b7;
+	box-shadow: 0 5px 15px rgba(182, 182, 182, 0.65);
+}
+
+.box .box-heading{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 17px;
+}
+
+.box .box-heading .fa{
+	font-size: 32px;
+	color: #0077F8;
+	margin-right: 20px;
+}
+
+
+/*############### ABOUT SECTIONS ################*/
+
+.about-section {
+	padding: 30px 40px 80px;
+}
+
+.about-section .about-grid {
+	display: grid;
+	grid-template-columns: 500px 1fr;
+	grid-gap: 0px;
+}
+
+.about-grid img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.about-section .grid-box:first-child {
+	padding-right: 100px;
+	padding-top: 70px;
+}
+
+.grid-box h3 {
+	font-size: 44px;
+	line-height: 1.0;
+	margin-bottom: 45px;
+}
+
+.grid-box p {
+	font-size: 18px;
+	margin-bottom: 55px;
+}
+
+.counter-rating {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 0px;
+	margin-right: 90px;
+}
+
+.rating-box h2 {
+	font-size: 40px;
+	font-weight: lighter;
+	color: #0058b7;
+}
+
+.rating-box h5 {
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.about-section-2 {
+	padding: 30px 40px 80px;
+}
+
+.about-section-2 .about-grid {
+	display: grid;
+	grid-template-columns: 1fr 500px;
+	grid-gap: 0px;
+}
+
+.about-section-2 .grid-box:last-child {
+	padding-left: 100px;
+	padding-top: 110px;
+}
+
+/*################ SERVICES ###################*/
+
+.services {
+	background: #fff;
+	margin: 70px 0px 0px;
+	padding: 30px 30px 60px;
+}
+
+.services .wrapper{
+	width: 80%;
+	margin: 40px auto;
+}
+
+.services h3{
+	margin: 20px 0px 25px;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.services p{
+	font-size: 19px;
+	text-align: center;
+}
+
+.service-boxes {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 80px;
+}
+
+.service-box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.service-box-icon {
+	margin-right: 30px;
+	margin-top: -60px;
+}
+
+.service-box-icon i{
+	font-size: 40px;
+	padding: 12px;
+	border: 2px solid #f2f2f2;
+	border-radius: 10px;
+	color: #0058b7;
+}
+
+
+.service-box .service-box-right h5 {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.service-box .service-box-right p {
+	font-size: 15px;
+	text-align: left;
+}
+
+
+
+/*################ PROJECTS ###################*/
+
+.projects {
+	background: #fff;
+	margin: 0px;
+	padding: 50px 30px 60px;
+}
+
+.projects .wrapper{
+	width: 80%;
+	margin: 40px auto;
+}
+
+.projects h3{
+	margin: 20px 0px 25px;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.projects p{
+	font-size: 19px;
+	text-align: center;
+}
+
+.projects-boxes {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 80px;
+	text-align: center;
+}
+
+.projects-box h4 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.projects-box p {
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+
+.projects-box a {
+	font-size: 15px;
+	text-decoration: none;
+}
+
+
+
+
+/*################ BANNER ###################*/
+.banner {
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), 
+	url('../img/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+
+.banner .wrapper{
+	width: 48%;
+	margin: auto;
+}
+
+.banner h5{
+	color: #9692D1;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.banner h3{
+	font-size: 40px;
+	margin: 10px 0px 40px;
+	line-height: 1.2;
+}
+
+.banner .button{
+	background: transparent;
+	border: 2px solid #9692D1;
+}
+
+.banner .button:hover{
+	background: #0058b7;
+	border: 2px solid #0058b7;
+}
+
+
+/*################ TESTIMONALS ###################*/
+
+.testimonals {
+	margin: 0px;
+	padding: 50px 30px 60px;
+}
+
+.testimonals .wrapper{
+	width: 80%;
+	margin: 40px auto;
+}
+
+.testimonals h3{
+	margin: 20px 0px 25px;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.testimonals p{
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.testimonals-boxes {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.testimonals-box {
+	background: #fff;
+	padding: 30px;
+}
+
+.testimonals-box h4 {
+	font-size: 17px;
+}
+
+.testimonals-box h5 {
+	font-size: 13px;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.testimonals-box p {
+	font-size: 16px;
+	margin-bottom: 40px;
+	font-weight: 500;
+}
+
+
+/*################ CLIENTS ###################*/
+
+.clients {
+	margin: 0px;
+	padding: 50px 30px 110px;
+	background: #fff;
+}
+
+.clients .wrapper{
+	width: 80%;
+	margin: 40px auto;
+}
+
+.clients h3{
+	margin: 20px 0px 25px;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/*################ PROJECTS ###################*/
+
+.contacts {
+	margin: 0px;
+	padding: 50px 20px 90px;
+}
+
+.contacts .wrapper{
+	width: 90%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.contacts i {
+	color: #0077F8;
+	font-size: 42px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.contacts h3{
+	margin: 10px 0px 25px;
+	font-size: 44px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contacts p{
+	font-size: 22px;
+	text-align: center;
+	color: #0077F8;
+}
+
+.contacts-boxes {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	text-align: center;
+}
+
+.contacts-box {
+	background: #fff;
+	padding: 30px;
+	box-shadow: 0 1px 2px rgba(182, 182, 182, 0.65);
+}
+
+.contacts-box i {
+	font-size: 22px;
+	background: #0077F8;
+	color: #fff;
+	padding: 19px;
+	border-radius: 100%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.contacts-box h4 {
+	font-size: 19px;
+	margin-bottom: 5px;
+}
+
+.contacts-box p {
+	font-size: 16px;
+	margin-bottom: 40px;
+	color: #333;
+}
+
+
+/*############ FOOTER################*/
+footer {
+	background: #111111;
+	color: #fff;
+	padding: 100px 80px 40px;
+}
+
+.footer-sections {
+	display: grid;
+	grid-template-columns: 400px 1fr 1fr 1fr;
+	grid-gap: 80px;
+	margin-bottom: 80px;
+}
+
+.footer-sections h4{
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: -0.7px;
+	margin-bottom: 18px;
+	font-family: 'Lobster', sans-serif;
+}
+
+.footer-sections h5{
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -0.7px;
+	margin-bottom: 18px;
+	text-transform: capitalize;
+}
+
+.footer-sections p{
+	font-size: 17px;
+	margin-bottom: 12px;
+}
+
+.social-icon {
+	margin-top: 20px;
+}
+
+.social-icon span {
+	font-size: 19px;
+	color: #fff;
+	margin-right: 18px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.social-icon span:hover {
+	color: #0058b7;
+}
+
+.footer-1 {
+	padding-right: 60px;
+}
+
+.footer-4 p {
+	color: #999;
+	font-size: 17px;
+}
+
+.links a{
+	display: block;
+	text-decoration: none;
+	margin-bottom: 8px;
+	color: gray;
+	transition: all 300ms ease;
+}
+
+.links a:hover{
+	color: #fff;
+}
+
+.footer-copyright {
+	border-top: 1px solid #333030;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 48px;
+}
+
+.footer-copyright p{
+	color: gray;
+	font-size: 15px;
+}
+
+.footer-copyright a{
+	color: #999;
+	font-size: 15px;
+	margin-left: 14px;
+	text-decoration: none;
+	transition: all 300ms ease;
+}
+
+
+
+
+/*et_divi_post_meta(); line 49*/
+/*<h1 class="entry-title"><?php the_title(); ?></h1> line 44*/
+
+/*$thumb = '';
+
+								$width = (int) apply_filters( 'et_pb_index_blog_image_width', 1080 );
+
+								$height = (int) apply_filters( 'et_pb_index_blog_image_height', 675 );
+								$classtext = 'et_featured_image';
+								$titletext = get_the_title();
+								$alttext = get_post_meta( get_post_thumbnail_id(), '_wp_attachment_image_alt', true );
+								$thumbnail = get_thumbnail( $width, $height, $classtext, $alttext, $titletext, false, 'Blogimage' );
+								$thumb = $thumbnail["thumb"];   Line 51*/
+
+
+
+/*
+<div class="et_post_meta_wrapper">
+							
+
+						<?php
+							if ( ! post_password_required() ) :
+
+								
+
+								
+
+								$post_format = et_pb_post_format();
+
+								if ( 'video' === $post_format && false !== ( $first_video = et_get_first_video() ) ) {
+									printf(
+										'<div class="et_main_video_container">
+											%1$s
+										</div>',
+										et_core_esc_previously( $first_video )
+									);
+								} else if ( ! in_array( $post_format, array( 'gallery', 'link', 'quote' ) ) && 'on' === et_get_option( 'divi_thumbnails', 'on' ) && '' !== $thumb ) {
+									print_thumbnail( $thumb, $thumbnail["use_timthumb"], $alttext, $width, $height );
+								} else if ( 'gallery' === $post_format ) {
+									et_pb_gallery_images();
+								}
+							?>
+
+							<?php
+								$text_color_class = et_divi_get_post_text_color();
+
+								$inline_style = et_divi_get_post_bg_inline_style();
+
+								switch ( $post_format ) {
+									case 'audio' :
+										$audio_player = et_pb_get_audio_player();
+
+										if ( $audio_player ) {
+											printf(
+												'<div class="et_audio_content%1$s"%2$s>
+													%3$s
+												</div>',
+												esc_attr( $text_color_class ),
+												et_core_esc_previously( $inline_style ),
+												et_core_esc_previously( $audio_player )
+											);
+										}
+
+										break;
+									case 'quote' :
+										printf(
+											'<div class="et_quote_content%2$s"%3$s>
+												%1$s
+											</div> <!-- .et_quote_content -->',
+											et_core_esc_previously( et_get_blockquote_in_content() ),
+											esc_attr( $text_color_class ),
+											et_core_esc_previously( $inline_style )
+										);
+
+										break;
+									case 'link' :
+										printf(
+											'<div class="et_link_content%3$s"%4$s>
+												<a href="%1$s" class="et_link_main_url">%2$s</a>
+											</div> <!-- .et_link_content -->',
+											esc_url( et_get_link_url() ),
+											esc_html( et_get_link_url() ),
+											esc_attr( $text_color_class ),
+											et_core_esc_previously( $inline_style )
+										);
+
+										break;
+								}
+
+							endif;
+						?>
+					</div> <!-- .et_post_meta_wrapper -->
+*/
